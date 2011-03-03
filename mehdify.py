@@ -20,7 +20,7 @@ def mehdify(status):
 
   # try and determine if the tweet asks a question
   if re.search(r'\?.{0,4}$', status)
-    return 'uhhh ' + status
+    return 'u' + 'hhhhhh'[random.randint(0,5):] + ' ' + status
 
   # prepend "aww yeah" or "whoa" to some tweets
   if random.random() > 0.5:

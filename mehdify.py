@@ -17,9 +17,9 @@ def mehdify(status):
   # add ", bro" to @replies
   if status[0] is '@':
     return re.sub(r'[?!,.]*$', ', bro', status)
-                   
+
   # prepend "aww yeah" or "whoa" to some tweets
   if random.random() > 0.5:
     return 'aww yeah, ' + status
-                   
+
   return 'whoa, ' + status

@@ -18,6 +18,10 @@ def mehdify(status):
   if status[0] is '@':
     return re.sub(r'[?!,.]*$', ', bro', status)
 
+  # try and determine if the tweet asks a question
+  if re.search(r'\?.{0,4}$', status)
+    return 'uhhh ' + status
+
   # prepend "aww yeah" or "whoa" to some tweets
   if random.random() > 0.5:
     return 'aww yeah, ' + status

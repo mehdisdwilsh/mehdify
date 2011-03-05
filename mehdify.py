@@ -21,7 +21,7 @@ def mehdify(status):
     return re.sub(r'[?!,.]*$', ', bro', status)
 
   # try and determine if the tweet asks a question
-  if re.search(r'\?.{0,4}$', status)
+  if re.search(r'\?.{0,4}$', status):
     return 'u' + 'hhhhhh'[random.randint(0,5):] + ' ' + status
 
   # prepend "aww yeah" or "whoa" to some tweets

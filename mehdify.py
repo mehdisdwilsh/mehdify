@@ -1,3 +1,5 @@
+import re
+
 def mehdify(status):
   replace_dict = { 'awesome': 'awesome/terrible',
                    'terrible': 'awesome/terrible',

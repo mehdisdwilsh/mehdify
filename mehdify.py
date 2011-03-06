@@ -1,4 +1,5 @@
 import re
+import random
 
 def mehdify(status):
   replace_dict = { 'awesome': 'awesome/terrible',

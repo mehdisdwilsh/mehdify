@@ -19,10 +19,7 @@ def mehdify(status):
 
   # add ", bro" to @replies
   if status[0] is '@':
-    pattern = r'[?!,.]*$'
-    match = re.search(pattern, status)
-    # match is never None
-    return re.sub(pattern, ', bro' + match.group(), status)
+    return re.sub(r'([?!,.]*$)', r', bro\1', status)
 
   # try and determine if the tweet asks a question
   if re.search(r'\?.{0,4}$', status):
